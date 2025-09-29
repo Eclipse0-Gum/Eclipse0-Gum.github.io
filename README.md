@@ -1,4 +1,4 @@
-# Eclipse0-Gum.github.io
+# Eclipse0-Gum's Info Thingy
 
 Hello, this is the README for my site which is also a place where you can read about me. (Obviously) 
 
