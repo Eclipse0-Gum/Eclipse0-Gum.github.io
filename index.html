@@ -50,12 +50,32 @@
     border-radius: 15px;
     box-shadow: 0px 4px 15px black;
   } 
+
+  .dark-mode {
+    background-color: #111 !important;
+    
+  }
+
+  .dark-mode .content {
+    background-color: #222 !important;
+  }
+
+  .dark-mode p {
+    background-color: #000 !important;
+  }
+
+  .dark-mode a {
+    color: #ffdf5d !important;
+  }
+
  </style>
 </head>
 <body>
   <div class="content">     
     <h1>Welcome to My Website! This is the start of my legendary adventures. Hopefully</h1>
     <p>This is just a testing website for now but I'll update this to show my work. </p>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button onclick="getFortune()">Get Your Fortune</button>
     
     <h2> My Links </h2>
     <p>Here are my links to different pages: <a href="https://github.com/Eclipse0-Gum/Eclipse0-Gum" target="_blank">Github Profile</a> <a href="https://www.linkedin.com/in/caleb-mendoza-74132a354/" target="_blank">My Linkedin</a></p>
@@ -63,5 +83,23 @@
     <h4>About Me</h4>
     <p>Here's a link to learn just a bit more about myself: <a href="about.html">About Me</a></p>
   </div>
+   <script>  
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+  <script>
+    function getFortune() {
+      const fortunes = [
+      "A pleasant surpirse is waiting for you.",
+      "You're Adventure awaits around a corner.",
+      "The hard work you've done will be rewarded.",
+      "Today you will find something new and wonderful.",
+      "A new opportunity shall come to your grasp.",
+      "Someone appreciates you more than you can ever realize."]
+      const randomIndex = Math.floor(Math,random() * fortunes.length);
+      alert(fortunes.randomIndex)
+    }
+  </script>
 </body>
 </html>

@@ -2,9 +2,77 @@
 <html>
 <head>
   <title>About Me</title>
-</head>
+  <style>
+  body {
+    background-image: url("GigaSonic.png");
+    background-size: cover; /* stretches to fit screen */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+   h1, h2, h4 {
+    text-align: center;
+    color: gold;
+    margin-top: 20px;
+  }
+
+  p {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px soild yellow;
+    font-size: 18px;
+  }
+
+  a {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: white;
+    text-decoration: underline
+  }
+
+  .content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: grey;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px black;
+  }
+
+  .dark-mode {
+    background-color: #111 !important;
+    
+  }
+
+  .dark-mode .content {
+    background-color: #222 !important;
+  }
+
+  .dark-mode p {
+    background-color: #000 !important;
+  }
+
+  .dark-mode a {
+    color: #ffdf5d !important;
+  }
+ </style>
+ </head>
 <body>
-  <h1>About Me</h1>
+  <div class="content"> 
+    <h1>About Me</h1>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
   <p>This is the about page where I share more about myself.</p>
 
 <h3>Hobbies</h3>
@@ -12,14 +80,11 @@
         And lastly, I like to learn about the career I want which is cybersecurity.</p>
 
   <a href="index.html">Return to Home</a>
-
-  <style>
-  body {
-    background-image: url("GigaSonic.png");
-    background-size: cover; /* stretches to fit screen */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-</style>
+  </div>
+  <script>  
+    function toggleDarkMode() {
+      document.body.classlist.toggle("dark-mode");
+    }
+  </script>
 </body>
 </html>
